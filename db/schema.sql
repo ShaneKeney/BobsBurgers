@@ -1,4 +1,4 @@
-### Schema
+-- ### Schema
 
 CREATE DATABASE cat_db;
 USE cat_db;

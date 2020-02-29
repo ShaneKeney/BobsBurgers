@@ -1,6 +1,12 @@
 var express = require("express");
+var dotenv = require('dotenv');
 
-var PORT = process.env.PORT || 8080;
+// Load environemnt variables if present for development
+if(process.env.NODE_ENV !== 'production') {
+  dotenv.config();
+}
+
+var PORT = process.env.PORT || 3000;
 
 var app = express();
 
